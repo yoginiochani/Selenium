@@ -17,7 +17,7 @@ public class task6_table {
 		System.setProperty("webdriver.chrome.driver", "C:\\Yogini\\chromedriver\\chromedriver.exe"); //location of browser in local drive
 		WebDriver driver = new ChromeDriver();
 		
-		driver.navigate().to("file:///C:/Users/tilak/Desktop/Magnus%20Details/index.html");
+		driver.navigate().to("file:///C:/Users/tilak/Desktop/Magnus%20Details/index.html");  //this line will open html page which is located in this path
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS); //this line means it will wait for 30 second before throwing an exception error if any
 		

@@ -47,6 +47,7 @@ WebDriver driver;
 	  System.out.println(tdydeal.getText()); //getting text of the partial link
 	  String tagname = tdydeal.getTagName(); //getting tagname which is "<a>
 	  System.out.println(tdydeal.getAttribute(tagname));  //this line prints pull
+	  
 	   
 	  // Thread.sleep(5000);
 	   //To scroll all the way down

@@ -26,6 +26,10 @@ public class dragDropAndMouseOver {
 		WebElement drop = driver.findElement(By.xpath("//div/p[contains(text(),'Drop here')]"));
 		
 		control.moveToElement(drag).clickAndHold(drag).moveToElement(drop).release(drag).build().perform();
+		//or you can perform drag and drop like this too, below two lines.
+		//Actions action = new Actions(driver);
+		//action.dragAndDrop(drag,drop).perform();
+		
 	    
 		System.out.println("****************Drag and Drop Worked*********************");
 		System.out.println("****************Next line of code is hoover over elements and perform action without clicking*********************");
@@ -47,6 +51,8 @@ public class dragDropAndMouseOver {
 	    //control.moveToElement(alternative);
 	    //control.click().build().perform();
 	    control.moveToElement(music).click().moveToElement(rock).click().moveToElement(alternative).click().build().perform();
+	    
+	    driver.close();
 	    
 	    
 	    
